@@ -1,0 +1,40 @@
+{
+    "name": "ewos-servercentral",
+    "version": "1.0.1",
+    "description": "A browser-based server managment tool designed to be user friendly.",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "sevices": "servercentral ./services.js",
+        "build": "electron-builder"
+    },
+    "repository": "https://github.com/electron/electron-quick-start",
+    "keywords": [
+        "Managment",
+        "server",
+        "electron",
+        "browser",
+        "js"
+    ],
+    "author": "Lumax Technologies Inc.",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "electron": "^18.1.0",
+        "electron-builder": "^23.0.3",
+        "electron-winstaller": "^5.0.0"
+    },
+    "dependencies": {
+        "autoprefixer": "^10.4.5",
+        "bootstrap-icons": "^1.8.1",
+        "node-notifier": "^10.0.1",
+        "nodemon": "^2.0.15",
+        "postcss": "^8.4.13",
+        "yarn": "^1.22.18"
+    },
+    "build": {
+        "appId": "com.lumax.servercentral",
+        "productName": "EWOS ServerCentral",
+        "executableName": "servercentral",
+        "icon": "favicon.png"
+    }
+}

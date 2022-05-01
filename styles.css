@@ -1,0 +1,407 @@
+/* styles.css */
+
+/* Add styles here to customize the appearance of your app */
+h1{
+    color: #404040;
+}
+.navicon{
+    filter: invert(1);
+}
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+}
+#circleG{
+	width:146px;
+	margin:auto;
+}
+
+.circleG{
+	background-color:rgb(255,255,255);
+	float:left;
+	height:31px;
+	margin-left:17px;
+	width:31px;
+	animation-name:bounce_circleG;
+		-o-animation-name:bounce_circleG;
+		-ms-animation-name:bounce_circleG;
+		-webkit-animation-name:bounce_circleG;
+		-moz-animation-name:bounce_circleG;
+	animation-duration:1.4575s;
+		-o-animation-duration:1.4575s;
+		-ms-animation-duration:1.4575s;
+		-webkit-animation-duration:1.4575s;
+		-moz-animation-duration:1.4575s;
+	animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+	animation-direction:normal;
+		-o-animation-direction:normal;
+		-ms-animation-direction:normal;
+		-webkit-animation-direction:normal;
+		-moz-animation-direction:normal;
+	border-radius:20px;
+		-o-border-radius:20px;
+		-ms-border-radius:20px;
+		-webkit-border-radius:20px;
+		-moz-border-radius:20px;
+}
+
+#circleG_1{
+	animation-delay:0.2895s;
+		-o-animation-delay:0.2895s;
+		-ms-animation-delay:0.2895s;
+		-webkit-animation-delay:0.2895s;
+		-moz-animation-delay:0.2895s;
+}
+
+#circleG_2{
+	animation-delay:0.6855s;
+		-o-animation-delay:0.6855s;
+		-ms-animation-delay:0.6855s;
+		-webkit-animation-delay:0.6855s;
+		-moz-animation-delay:0.6855s;
+}
+
+#circleG_3{
+	animation-delay:0.8785s;
+		-o-animation-delay:0.8785s;
+		-ms-animation-delay:0.8785s;
+		-webkit-animation-delay:0.8785s;
+		-moz-animation-delay:0.8785s;
+}
+
+
+
+@keyframes bounce_circleG{
+	0%{}
+
+	50%{
+		background-color:rgb(64,64,64);
+	}
+
+	100%{}
+}
+
+@-o-keyframes bounce_circleG{
+	0%{}
+
+	50%{
+		background-color:rgb(64,64,64);
+	}
+
+	100%{}
+}
+
+@-ms-keyframes bounce_circleG{
+	0%{}
+
+	50%{
+		background-color:rgb(64,64,64);
+	}
+
+	100%{}
+}
+
+@-webkit-keyframes bounce_circleG{
+	0%{}
+
+	50%{
+		background-color:rgb(64,64,64);
+	}
+
+	100%{}
+}
+
+@-moz-keyframes bounce_circleG{
+	0%{}
+
+	50%{
+		background-color:rgb(64,64,64);
+	}
+
+	100%{}
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+a.btn {
+	background: #0096a0;
+	border-radius: 4px;
+	box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+	color: #ffffff;
+	display: inline-block;
+	padding: 6px 30px 8px;
+	position: relative;
+	text-decoration: none;
+	transition: all 0.1s 0s ease-out;
+}
+
+.no-touch a.btn:hover {
+	background: #00a2ad;
+	box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+	transform: translateY(-2px);
+	transition: all 0.25s 0s ease-out;
+}
+
+.no-touch a.btn:active,
+a.btn:active {
+	background: #008a93;
+	box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+	transform: translate3d(0, 1px, 0);
+	transition: all 0.025s 0s ease-out;
+}
+
+div.cards {
+	margin: 80px auto;
+	max-width: 960px;
+	text-align: center;
+}
+
+div.card {
+	background: #ffffff;
+	display: inline-block;
+	margin: 8px;
+	max-width: 300px;
+	perspective: 1000;
+	position: relative;
+	text-align: left;
+	transition: all 0.3s 0s ease-in;
+	width: 200px;
+	z-index: 1;
+}
+
+div.card img {
+	max-width: 300px;
+	height: 64px;
+	width: 64px;
+}
+
+div.card .card__image-holder {
+	background: rgba(0, 0, 0, 0.1);
+	height: 0;
+	padding-bottom: 75%;
+}
+
+div.card div.card-title {
+	background: #ffffff;
+	padding: 6px 15px 10px;
+	position: relative;
+	z-index: 0;
+}
+
+div.card div.card-title a.toggle-info {
+	border-radius: 32px;
+	height: 32px;
+	padding: 0;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	width: 32px;
+}
+
+div.card div.card-title a.toggle-info span {
+	background: #ffffff;
+	display: block;
+	height: 2px;
+	position: absolute;
+	top: 16px;
+	transition: all 0.15s 0s ease-out;
+	width: 12px;
+}
+
+div.card div.card-title a.toggle-info span.left {
+	right: 14px;
+	transform: rotate(45deg);
+}
+
+div.card div.card-title a.toggle-info span.right {
+	left: 14px;
+	transform: rotate(-45deg);
+}
+
+div.card div.card-title h2 {
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	margin: 0;
+	padding: 0;
+}
+
+div.card div.card-title h2 small {
+	display: block;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: -0.025em;
+}
+
+div.card div.card-description {
+	padding: 0 15px 10px;
+	position: relative;
+	font-size: 14px;
+}
+
+div.card div.card-actions {
+	box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+	padding: 10px 15px 20px;
+	text-align: center;
+}
+
+div.card div.card-flap {
+	background: #d9d9d9;
+	position: absolute;
+	width: 100%;
+	transform-origin: top;
+	transform: rotateX(-90deg);
+}
+
+div.card div.flap1 {
+	transition: all 0.3s 0.3s ease-out;
+	z-index: -1;
+}
+
+div.card div.flap2 {
+	transition: all 0.3s 0s ease-out;
+	z-index: -2;
+}
+
+div.cards.showing div.card {
+	cursor: pointer;
+	opacity: 0.6;
+	transform: scale(0.88);
+}
+
+.no-touch div.cards.showing div.card:hover {
+	opacity: 0.94;
+	transform: scale(0.92);
+}
+
+div.card.show {
+	opacity: 1 !important;
+	transform: scale(1) !important;
+}
+
+div.card.show div.card-title a.toggle-info {
+	background: #ff6666 !important;
+}
+
+div.card.show div.card-title a.toggle-info span {
+	top: 15px;
+}
+
+div.card.show div.card-title a.toggle-info span.left {
+	right: 10px;
+}
+
+div.card.show div.card-title a.toggle-info span.right {
+	left: 10px;
+}
+
+div.card.show div.card-flap {
+	background: #ffffff;
+	transform: rotateX(0deg);
+}
+
+div.card.show div.flap1 {
+	transition: all 0.3s 0s ease-out;
+}
+
+div.card.show div.flap2 {
+	transition: all 0.3s 0.2s ease-out;
+}
+.center-h {
+	display: flex;
+	justify-content: center;
+}
+
+.center-v {
+	display: flex;
+	align-items: center;
+}
+
+.h-500 {
+	height: 500px;
+}

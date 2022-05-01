@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <script src="js/bootstrap.bundle.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./styles.css" rel="stylesheet" />
+        <title>EWOS ServerCentral - Home</title>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    </head>
+    </script>
+    <body>
+   </div>
+        <header>
+            <div class="px-3 py-2 bg-dark text-white">
+                <div class="container">
+                    <div
+                        class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+                    >
+                        <a
+                            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+                        >
+                            <img
+                                src="bitmap-dark.png"
+                                class="bi me-2"
+                                width="200px"
+                            /><span class="badge bg-warning">BETA</span>
+                        </a>
+
+                        <ul
+                            class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+                        >
+                            <li>
+                                <a href="#" class="nav-link text-secondary">
+                                    <img
+                                        class="bi navicon d-block mx-auto mb-1 text-white"
+                                        width="24"
+                                        height="24"
+                                     src="icons/house.svg">
+                                    
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="www.html" class="nav-link text-white">
+                                    <img
+                                        class="bi navicon d-block mx-auto mb-1 text-white"
+                                        width="24"
+                                        height="24"
+                                     src="icons/globe.svg">
+                                    WWW
+                                </a>
+                            </li>
+                            <li>
+                                <a href="storage.html" class="nav-link text-white">
+                                    <img
+                                        class="bi navicon d-block mx-auto mb-1 text-white"
+                                        width="24"
+                                        height="24"
+                                     src="icons/hdd-fill.svg">
+                                    Storage
+                                </a>
+                            </li>
+                            <li>
+                                <a href="network.html" class="nav-link text-white">
+                                    <img
+                                        class="bi navicon d-block mx-auto mb-1 text-white"
+                                        width="24"
+                                        height="24"
+                                     src="icons/ethernet.svg">
+                                    Network
+                                </a>
+                            </li>
+                            <li>
+                              <div class="dropdown">
+                                <a class="nav-link dropdown-toggle text-white" 
+                                id="dropdownMenuButton1" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false"
+                                href="#">
+                                    
+                                    <img
+                                        class="bi navicon d-block mx-auto mb-1 text-white"
+                                        width="24"
+                                        height="24"
+                                     src="icons/gear-fill.svg">
+                                     Settings
+                                </a>
+                              </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#about" href="#">About</a></li>
+                                  <li><a class="dropdown-item" href="#">System Settings</a></li>
+                                  <li><a class="dropdown-item" onclick="toggleWebAccess()" href="#">Toggle Web Access</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="px-3 py-2 border-bottom mb-3">
+                <div class="container d-flex flex-wrap justify-content-center">
+                    <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
+                        <input
+                            type="search"
+                            class="form-control"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+                    </form>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="main">
+            <div class="element ">
+                <h1>Home</h1>
+                <div class="cards">
+                <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image center" src="icons/hdd-rack-fill.svg" alt="hdd" />
+    </div>
+    <div class="card-title">
+      <a href="storage.html" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Storage
+          <small>Check available storage</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        SeverCentral allows you to check your current status of 
+        storage devices.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="storage.html" class="btn">Open</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="icons/ethernet.svg" alt="network" />
+    </div>
+    <div class="card-title">
+      <a href="network.html" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Network
+          <small>Check network settings</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        SeverCentral allows you to check your current status of 
+        network cards and devices connected to it.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Go to</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="icons/globe.svg" alt="www" />
+    </div>
+    <div class="card-title">
+      <a href="www.html" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          WWW
+          <small>Check Web Server settings</small>
+            </h2>
+                </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            SeverCentral allows you to check your current status of 
+                            web server and mysql databases.
+                        </div>
+                            <div class="card-flap flap2">
+                                <div class="card-actions">
+                                    <a href="#" class="btn">Go to</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="snackbar"><img class="text-success navicon" src="icons/info-circle-fill.svg"> Toggled Web Access</div>
+        </div>
+    </div>
+    <div class="modal fade" id="about">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">About ServerCentral</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        
+        <h1><img src="bitmap.png" width="200px"> ServerCentral</h1><p>
+        Version: <span id="app-version"><span class="badge bg-warning">BETA</span></span></p>
+        <h3>Based on:</h2>
+        Electron: <span id="electron-version"></span><br>
+        Chromium: <span id="chrome-version"></span><br>
+        Node.js:  <span id="node-version"></span><br>
+        OneAuth Core: 1.0.45 <span class="badge bg-primary">ALPHA</span>
+        <br>
+        <hr>
+        <div id="updates" class="updates">
+            <h3>Updates</h3><p>
+                <div class="text-muted"><div class="spinner-border text-muted spinner-border-sm"></div> Checking for updates.</div>
+            </p>
+        </div>
+        <center>&copy; Lumax Technologies Inc.<br></center>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/script.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+    
+function toggleWebAccess() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+  <script src="./renderer.js"></script>
+    </body>
+</html>
