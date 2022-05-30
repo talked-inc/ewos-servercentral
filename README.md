@@ -8,7 +8,7 @@ Use the release version of ServerCentral when installing to your server machine.
 
 ```bash
 wget https://github.com/talked-inc/ewos-servercentral/blob/main/unix-setup.sh
-sudo chmod +x unix-.setup.sh
+sudo chmod +x unix-setup.sh
 sudo ./unix-setup.sh
 ```
 
